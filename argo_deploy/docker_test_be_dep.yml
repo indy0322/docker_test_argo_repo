@@ -19,7 +19,7 @@ spec:
       #     command: ['sh', '-c', 'until nc -z docker-test-db-ser 3306; do echo "??waiting for db"; sleep 2; done;']
       containers:
       - name: docker-test-be-dep
-        image: indy0322/docker_test_argo:1
+        image: indy0322/docker_test_argo:2
         imagePullPolicy: Always
         ports:
         - containerPort: 7777
