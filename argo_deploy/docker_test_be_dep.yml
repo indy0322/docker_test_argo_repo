@@ -12,14 +12,14 @@ spec:
       labels:
         app: docker-test-be
     spec:
-      # DB 준비 대기 컨테이너
+      # DB 준�??��?컨테?�너
       # initContainers:
       #   - name: wait-for-db
       #     image: busybox
-      #     command: ['sh', '-c', 'until nc -z docker-test-db-ser 3306; do echo "⏳ waiting for db"; sleep 2; done;']
+      #     command: ['sh', '-c', 'until nc -z docker-test-db-ser 3306; do echo "??waiting for db"; sleep 2; done;']
       containers:
       - name: docker-test-be-dep
-        image: indy0322/docker_test_argo:latest 
+        image: indy0322/docker_test_argo:1
         imagePullPolicy: Always
         ports:
         - containerPort: 7777
